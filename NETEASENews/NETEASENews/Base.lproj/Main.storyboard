@@ -27,7 +27,7 @@
         <!--网易新闻-->
         <scene sceneID="LzC-Mg-Cvq">
             <objects>
-                <viewController id="Chl-zN-E5X" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Chl-zN-E5X" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KxZ-fT-isX"/>
                         <viewControllerLayoutGuide type="bottom" id="Phd-H4-HgF"/>
