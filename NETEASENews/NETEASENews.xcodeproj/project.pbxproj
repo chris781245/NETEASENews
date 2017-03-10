@@ -13,6 +13,9 @@
 		3D71A39F1E72BF7E002C3524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D71A39E1E72BF7E002C3524 /* Assets.xcassets */; };
 		3D71A3A21E72BF7E002C3524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D71A3A01E72BF7E002C3524 /* LaunchScreen.storyboard */; };
 		3D71A3B61E72C53D002C3524 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3B51E72C53D002C3524 /* HomeViewController.m */; };
+		3D71A3B91E72CE69002C3524 /* ChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3B81E72CE69002C3524 /* ChannelModel.m */; };
+		3D71A3BB1E72CE99002C3524 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D71A3BA1E72CE99002C3524 /* topic_news.json */; };
+		3D71A3BE1E72D3EE002C3524 /* ChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3BD1E72D3EE002C3524 /* ChannelLabel.m */; };
 		C1B77A696A187A2618221FCF /* libPods-NETEASENews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8118EEA5E6A3120502E4EA86 /* libPods-NETEASENews.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,11 @@
 		3D71A3A31E72BF7E002C3524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D71A3B41E72C53D002C3524 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		3D71A3B51E72C53D002C3524 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3D71A3B71E72CE69002C3524 /* ChannelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelModel.h; sourceTree = "<group>"; };
+		3D71A3B81E72CE69002C3524 /* ChannelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelModel.m; sourceTree = "<group>"; };
+		3D71A3BA1E72CE99002C3524 /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		3D71A3BC1E72D3EE002C3524 /* ChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelLabel.h; sourceTree = "<group>"; };
+		3D71A3BD1E72D3EE002C3524 /* ChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelLabel.m; sourceTree = "<group>"; };
 		79E693B4FAB37A7EC9E10C0E /* Pods-NETEASENews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NETEASENews.release.xcconfig"; path = "Pods/Target Support Files/Pods-NETEASENews/Pods-NETEASENews.release.xcconfig"; sourceTree = "<group>"; };
 		8118EEA5E6A3120502E4EA86 /* libPods-NETEASENews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NETEASENews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +78,7 @@
 				3D71A3961E72BF7E002C3524 /* AppDelegate.m */,
 				3D71A39B1E72BF7E002C3524 /* Main.storyboard */,
 				3D71A39E1E72BF7E002C3524 /* Assets.xcassets */,
+				3D71A3BA1E72CE99002C3524 /* topic_news.json */,
 				3D71A3A01E72BF7E002C3524 /* LaunchScreen.storyboard */,
 				3D71A3A31E72BF7E002C3524 /* Info.plist */,
 				3D71A3921E72BF7E002C3524 /* Supporting Files */,
@@ -116,6 +125,8 @@
 		3D71A3B11E72C4A0002C3524 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3D71A3B71E72CE69002C3524 /* ChannelModel.h */,
+				3D71A3B81E72CE69002C3524 /* ChannelModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,6 +134,8 @@
 		3D71A3B21E72C4A0002C3524 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3D71A3BC1E72D3EE002C3524 /* ChannelLabel.h */,
+				3D71A3BD1E72D3EE002C3524 /* ChannelLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +228,7 @@
 			files = (
 				3D71A3A21E72BF7E002C3524 /* LaunchScreen.storyboard in Resources */,
 				3D71A39F1E72BF7E002C3524 /* Assets.xcassets in Resources */,
+				3D71A3BB1E72CE99002C3524 /* topic_news.json in Resources */,
 				3D71A39D1E72BF7E002C3524 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +291,8 @@
 				3D71A3971E72BF7E002C3524 /* AppDelegate.m in Sources */,
 				3D71A3941E72BF7E002C3524 /* main.m in Sources */,
 				3D71A3B61E72C53D002C3524 /* HomeViewController.m in Sources */,
+				3D71A3B91E72CE69002C3524 /* ChannelModel.m in Sources */,
+				3D71A3BE1E72D3EE002C3524 /* ChannelLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

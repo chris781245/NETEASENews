@@ -76,6 +76,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="网易新闻" id="fML-my-ckB"/>
+                    <connections>
+                        <outlet property="channelView" destination="6rm-16-glI" id="EAT-ft-NJf"/>
+                        <outlet property="flowLayout" destination="7pr-c4-ZqK" id="jJU-vl-quF"/>
+                        <outlet property="newsView" destination="d6Q-8i-Zee" id="HHq-oa-i4G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSP-q1-Yne" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

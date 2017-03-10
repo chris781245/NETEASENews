@@ -10,6 +10,12 @@
 
 @interface HomeViewController ()
 
+@property (weak, nonatomic) IBOutlet UIScrollView *channelView;
+
+@property (weak, nonatomic) IBOutlet UICollectionView *newsView;
+
+@property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *flowLayout;
+
 @end
 
 @implementation HomeViewController
@@ -17,7 +23,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self requestChannelData];
 }
+
+- (void) requestChannelData {
+    
+    
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
