@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D71A3941E72BF7E002C3524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3931E72BF7E002C3524 /* main.m */; };
+		3D71A3971E72BF7E002C3524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3961E72BF7E002C3524 /* AppDelegate.m */; };
+		3D71A39A1E72BF7E002C3524 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3991E72BF7E002C3524 /* ViewController.m */; };
+		3D71A39D1E72BF7E002C3524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D71A39B1E72BF7E002C3524 /* Main.storyboard */; };
+		3D71A39F1E72BF7E002C3524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D71A39E1E72BF7E002C3524 /* Assets.xcassets */; };
+		3D71A3A21E72BF7E002C3524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D71A3A01E72BF7E002C3524 /* LaunchScreen.storyboard */; };
+		3D71A3B61E72C53D002C3524 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3B51E72C53D002C3524 /* HomeViewController.m */; };
+		C1B77A696A187A2618221FCF /* libPods-NETEASENews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8118EEA5E6A3120502E4EA86 /* libPods-NETEASENews.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		246A791E6EA35B339F1A6909 /* Pods-NETEASENews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NETEASENews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NETEASENews/Pods-NETEASENews.debug.xcconfig"; sourceTree = "<group>"; };
+		3D71A38F1E72BF7E002C3524 /* NETEASENews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NETEASENews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D71A3931E72BF7E002C3524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D71A3951E72BF7E002C3524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D71A3961E72BF7E002C3524 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D71A3981E72BF7E002C3524 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3D71A3991E72BF7E002C3524 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D71A39C1E72BF7E002C3524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D71A39E1E72BF7E002C3524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D71A3A11E72BF7E002C3524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D71A3A31E72BF7E002C3524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D71A3B41E72C53D002C3524 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3D71A3B51E72C53D002C3524 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		79E693B4FAB37A7EC9E10C0E /* Pods-NETEASENews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NETEASENews.release.xcconfig"; path = "Pods/Target Support Files/Pods-NETEASENews/Pods-NETEASENews.release.xcconfig"; sourceTree = "<group>"; };
+		8118EEA5E6A3120502E4EA86 /* libPods-NETEASENews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NETEASENews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D71A38C1E72BF7E002C3524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B77A696A187A2618221FCF /* libPods-NETEASENews.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D71A3861E72BF7E002C3524 = {
+			isa = PBXGroup;
+			children = (
+				3D71A3911E72BF7E002C3524 /* NETEASENews */,
+				3D71A3901E72BF7E002C3524 /* Products */,
+				CB5EC9469C282455E8D54D78 /* Pods */,
+				EDCDE5F2B6A0B42CD74EDD3F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D71A3901E72BF7E002C3524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D71A38F1E72BF7E002C3524 /* NETEASENews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D71A3911E72BF7E002C3524 /* NETEASENews */ = {
+			isa = PBXGroup;
+			children = (
+				3D71A3AE1E72C4A0002C3524 /* Classes */,
+				3D71A3951E72BF7E002C3524 /* AppDelegate.h */,
+				3D71A3961E72BF7E002C3524 /* AppDelegate.m */,
+				3D71A3981E72BF7E002C3524 /* ViewController.h */,
+				3D71A3991E72BF7E002C3524 /* ViewController.m */,
+				3D71A39B1E72BF7E002C3524 /* Main.storyboard */,
+				3D71A39E1E72BF7E002C3524 /* Assets.xcassets */,
+				3D71A3A01E72BF7E002C3524 /* LaunchScreen.storyboard */,
+				3D71A3A31E72BF7E002C3524 /* Info.plist */,
+				3D71A3921E72BF7E002C3524 /* Supporting Files */,
+			);
+			path = NETEASENews;
+			sourceTree = "<group>";
+		};
+		3D71A3921E72BF7E002C3524 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D71A3931E72BF7E002C3524 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D71A3AE1E72C4A0002C3524 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D71A3AF1E72C4A0002C3524 /* Home */,
+				3D71A3B31E72C4A0002C3524 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3D71A3AF1E72C4A0002C3524 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3D71A3B01E72C4A0002C3524 /* Controller */,
+				3D71A3B11E72C4A0002C3524 /* Model */,
+				3D71A3B21E72C4A0002C3524 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3D71A3B01E72C4A0002C3524 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D71A3B41E72C53D002C3524 /* HomeViewController.h */,
+				3D71A3B51E72C53D002C3524 /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D71A3B11E72C4A0002C3524 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D71A3B21E72C4A0002C3524 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D71A3B31E72C4A0002C3524 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CB5EC9469C282455E8D54D78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				246A791E6EA35B339F1A6909 /* Pods-NETEASENews.debug.xcconfig */,
+				79E693B4FAB37A7EC9E10C0E /* Pods-NETEASENews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EDCDE5F2B6A0B42CD74EDD3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8118EEA5E6A3120502E4EA86 /* libPods-NETEASENews.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D71A38E1E72BF7E002C3524 /* NETEASENews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D71A3A61E72BF7E002C3524 /* Build configuration list for PBXNativeTarget "NETEASENews" */;
+			buildPhases = (
+				76B8EB65571DBE6A9CAAE715 /* [CP] Check Pods Manifest.lock */,
+				3D71A38B1E72BF7E002C3524 /* Sources */,
+				3D71A38C1E72BF7E002C3524 /* Frameworks */,
+				3D71A38D1E72BF7E002C3524 /* Resources */,
+				87ABAC03F6B9367C1F0B52DE /* [CP] Embed Pods Frameworks */,
+				27BCA5FF6D40CDF901A72EE3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NETEASENews;
+			productName = NETEASENews;
+			productReference = 3D71A38F1E72BF7E002C3524 /* NETEASENews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D71A3871E72BF7E002C3524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "史泽东";
+				TargetAttributes = {
+					3D71A38E1E72BF7E002C3524 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 37RJ7539X9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3D71A38A1E72BF7E002C3524 /* Build configuration list for PBXProject "NETEASENews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D71A3861E72BF7E002C3524;
+			productRefGroup = 3D71A3901E72BF7E002C3524 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D71A38E1E72BF7E002C3524 /* NETEASENews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D71A38D1E72BF7E002C3524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D71A3A21E72BF7E002C3524 /* LaunchScreen.storyboard in Resources */,
+				3D71A39F1E72BF7E002C3524 /* Assets.xcassets in Resources */,
+				3D71A39D1E72BF7E002C3524 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27BCA5FF6D40CDF901A72EE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NETEASENews/Pods-NETEASENews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76B8EB65571DBE6A9CAAE715 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87ABAC03F6B9367C1F0B52DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NETEASENews/Pods-NETEASENews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D71A38B1E72BF7E002C3524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D71A39A1E72BF7E002C3524 /* ViewController.m in Sources */,
+				3D71A3971E72BF7E002C3524 /* AppDelegate.m in Sources */,
+				3D71A3941E72BF7E002C3524 /* main.m in Sources */,
+				3D71A3B61E72C53D002C3524 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D71A39B1E72BF7E002C3524 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D71A39C1E72BF7E002C3524 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D71A3A01E72BF7E002C3524 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D71A3A11E72BF7E002C3524 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D71A3A41E72BF7E002C3524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D71A3A51E72BF7E002C3524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D71A3A71E72BF7E002C3524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246A791E6EA35B339F1A6909 /* Pods-NETEASENews.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 37RJ7539X9;
+				INFOPLIST_FILE = NETEASENews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sd.NETEASENews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D71A3A81E72BF7E002C3524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79E693B4FAB37A7EC9E10C0E /* Pods-NETEASENews.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 37RJ7539X9;
+				INFOPLIST_FILE = NETEASENews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sd.NETEASENews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D71A38A1E72BF7E002C3524 /* Build configuration list for PBXProject "NETEASENews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D71A3A41E72BF7E002C3524 /* Debug */,
+				3D71A3A51E72BF7E002C3524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D71A3A61E72BF7E002C3524 /* Build configuration list for PBXNativeTarget "NETEASENews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D71A3A71E72BF7E002C3524 /* Debug */,
+				3D71A3A81E72BF7E002C3524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D71A3871E72BF7E002C3524 /* Project object */;
+}
