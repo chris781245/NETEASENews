@@ -99,6 +99,28 @@
     
     // 获取频道label
     ChannelLabel *channelLabel = (ChannelLabel *)gesture.view;
+    [self scrollChannelLabel:channelLabel];
+    
+    // 创建滚动的indexPath
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:channelLabel.tag inSection:0];
+    
+    [self.newsView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+}
+
+#pragma mark - 滚动标签，让频道居中 uiscrollview delegate
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    
+    // 计算滚动页数的索引
+    int index = scrollView.contentOffset.x / scrollView.frame.size.width;
+    
+    // 根据索引获取频道标签
+    ChannelLabel *channelLabel = self.channelLabelArray[index];
+    
+    [self scrollChannelLabel:channelLabel];
+    
+}
+
+- (void) scrollChannelLabel: (ChannelLabel *)channelLabel {
     
     // 获取label的中心X
     CGFloat channelLabelCenterX = channelLabel.center.x;
@@ -119,12 +141,8 @@
     }
     
     // 频道滚动到指定位置
-    [self.channelView setContentOffset:CGPointMake(contentOffsetX, 0) animated:NO];
-    
-    // 创建滚动的indexPath
-    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:channelLabel.tag inSection:0];
-    
-    [self.newsView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+    [self.channelView setContentOffset:CGPointMake(contentOffsetX, 0) animated:YES];
+
 }
 
 // 设置新闻视图
