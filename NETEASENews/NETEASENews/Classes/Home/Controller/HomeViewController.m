@@ -22,6 +22,9 @@
 //频道数据源
 @property (nonatomic, strong) NSArray *channelModelArray;
 
+// 记录频道标签
+@property (nonatomic, strong) NSMutableArray *channelLabelArray;
+
 @end
 
 @implementation HomeViewController
@@ -60,6 +63,27 @@
         channelLabel.textAlignment = NSTextAlignmentCenter;
         
         [self.channelView addSubview:channelLabel];
+        
+        // 开启用户交互
+        channelLabel.userInteractionEnabled = YES;
+        
+        // 创建手势
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapChannelLabelAction:)];
+        
+        // 添加手势
+        [channelLabel addGestureRecognizer:tapGesture];
+        
+        // 设置tag
+        channelLabel.tag = i;
+        
+        // 记录频道label
+        [self.channelLabelArray addObject:channelLabel];
+        
+        // 表示头条新闻
+        if (i == 0) {
+            
+        }
+        
     }
     
     // 设置channelView滚动范围
@@ -68,6 +92,34 @@
     // 取消滚动指示器
     self.channelView.showsVerticalScrollIndicator = NO;
     self.channelView.showsHorizontalScrollIndicator = NO;
+}
+
+#pragma mark - 点击频道label的手势处理
+- (void) tapChannelLabelAction: (UITapGestureRecognizer *)gesture {
+    
+    // 获取频道label
+    ChannelLabel *channelLabel = (ChannelLabel *)gesture.view;
+    
+    // 获取label的中心X
+    CGFloat channelLabelCenterX = channelLabel.center.x;
+    
+    // 计算滚动出去的距离
+    CGFloat contentOffsetX = channelLabelCenterX - self.view.frame.size.width * 0.5;
+    
+    // 设置最小滚动范围 和 最大滚动范围
+    CGFloat contentOffsetMinX = 0;
+    CGFloat contentOffsetMaxX = self.channelView.contentSize.width - self.view.frame.size.width;
+    
+    // 比最小小等于最小， 比最大大等于最大
+    if (contentOffsetX < contentOffsetMinX) {
+        contentOffsetX = contentOffsetMinX;
+    }
+    if (contentOffsetX > contentOffsetMaxX) {
+        contentOffsetX = contentOffsetMaxX;
+    }
+    
+    // 频道滚动到指定位置
+    [self.channelView setContentOffset:CGPointMake(contentOffsetX, 0) animated:NO];
 }
 
 // 设置新闻视图
