@@ -10,4 +10,7 @@
 
 @interface NewsCell : UICollectionViewCell
 
+// 请求地址
+@property (nonatomic, copy) NSString *urlStr;
+
 @end

@@ -19,6 +19,7 @@
 		3D71A3C11E72DF77002C3524 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3C01E72DF77002C3524 /* NewsTableViewController.m */; };
 		3D71A3C41E72DF8E002C3524 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3C31E72DF8E002C3524 /* NewsModel.m */; };
 		3D71A3C71E72DFBE002C3524 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3C61E72DFBE002C3524 /* NewsCell.m */; };
+		3D71A3CA1E72E69C002C3524 /* NetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3C91E72E69C002C3524 /* NetworkTool.m */; };
 		C1B77A696A187A2618221FCF /* libPods-NETEASENews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8118EEA5E6A3120502E4EA86 /* libPods-NETEASENews.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,8 @@
 		3D71A3C31E72DF8E002C3524 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
 		3D71A3C51E72DFBE002C3524 /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
 		3D71A3C61E72DFBE002C3524 /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		3D71A3C81E72E69C002C3524 /* NetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTool.h; sourceTree = "<group>"; };
+		3D71A3C91E72E69C002C3524 /* NetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTool.m; sourceTree = "<group>"; };
 		79E693B4FAB37A7EC9E10C0E /* Pods-NETEASENews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NETEASENews.release.xcconfig"; path = "Pods/Target Support Files/Pods-NETEASENews/Pods-NETEASENews.release.xcconfig"; sourceTree = "<group>"; };
 		8118EEA5E6A3120502E4EA86 /* libPods-NETEASENews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NETEASENews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -158,6 +161,8 @@
 		3D71A3B31E72C4A0002C3524 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3D71A3C81E72E69C002C3524 /* NetworkTool.h */,
+				3D71A3C91E72E69C002C3524 /* NetworkTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 			files = (
 				3D71A3C11E72DF77002C3524 /* NewsTableViewController.m in Sources */,
 				3D71A3971E72BF7E002C3524 /* AppDelegate.m in Sources */,
+				3D71A3CA1E72E69C002C3524 /* NetworkTool.m in Sources */,
 				3D71A3C71E72DFBE002C3524 /* NewsCell.m in Sources */,
 				3D71A3941E72BF7E002C3524 /* main.m in Sources */,
 				3D71A3B61E72C53D002C3524 /* HomeViewController.m in Sources */,

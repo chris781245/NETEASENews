@@ -7,8 +7,13 @@
 //
 
 #import "NewsTableViewController.h"
+#import "NewsCell.h"
+#import "NewsModel.h"
 
 @interface NewsTableViewController ()
+
+// 新闻列表数据源
+@property (nonatomic, strong) NSArray *newsModelArray;
 
 @end
 
@@ -17,11 +22,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [self setupTableView];
+}
+
+- (void) setupTableView {
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    
+}
+
+- (void)setUrlStr:(NSString *)urlStr {
+    _urlStr = urlStr;
+    
+    [NewsModel requestNewsModelArrayWithUrlStr:urlStr andCompletionBlock:^(NSArray *modelArray) {
+        self.newsModelArray = modelArray;
+        
+        // 获取到数据
+        [self.tableView reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,26 +48,23 @@
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return self.newsModelArray.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    
+    NewsModel *model = self.newsModelArray[indexPath.row];
+    
+    cell.textLabel.text = model.title;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
