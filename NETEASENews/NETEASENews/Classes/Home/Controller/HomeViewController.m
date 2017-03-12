@@ -120,6 +120,11 @@
     
     // 频道滚动到指定位置
     [self.channelView setContentOffset:CGPointMake(contentOffsetX, 0) animated:NO];
+    
+    // 创建滚动的indexPath
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:channelLabel.tag inSection:0];
+    
+    [self.newsView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
 }
 
 // 设置新闻视图
