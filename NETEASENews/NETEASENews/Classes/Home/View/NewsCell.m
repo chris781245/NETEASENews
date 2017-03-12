@@ -25,7 +25,7 @@
     _tableViewVC.tableView.frame = self.contentView.bounds;
     
     // 设置tableview的随机颜色
-    _tableViewVC.tableView.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1];
+   // _tableViewVC.tableView.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1];
 }
 
 - (void)setUrlStr:(NSString *)urlStr {

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3D2362D21E752F1E00749E3C /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2362D11E752F1E00749E3C /* NewsTableViewCell.m */; };
 		3D2362D41E752F5D00749E3C /* BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2362D31E752F5D00749E3C /* BaseCell.xib */; };
+		3D2362D61E7538D500749E3C /* BigImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2362D51E7538D500749E3C /* BigImageCell.xib */; };
+		3D2362D81E753D8300749E3C /* ImagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2362D71E753D8300749E3C /* ImagesCell.xib */; };
+		3D2362DB1E75420D00749E3C /* PictureInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2362DA1E75420D00749E3C /* PictureInfo.m */; };
 		3D71A3941E72BF7E002C3524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3931E72BF7E002C3524 /* main.m */; };
 		3D71A3971E72BF7E002C3524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3961E72BF7E002C3524 /* AppDelegate.m */; };
 		3D71A39D1E72BF7E002C3524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D71A39B1E72BF7E002C3524 /* Main.storyboard */; };
@@ -30,6 +33,10 @@
 		3D2362D01E752F1E00749E3C /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
 		3D2362D11E752F1E00749E3C /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 		3D2362D31E752F5D00749E3C /* BaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseCell.xib; sourceTree = "<group>"; };
+		3D2362D51E7538D500749E3C /* BigImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BigImageCell.xib; sourceTree = "<group>"; };
+		3D2362D71E753D8300749E3C /* ImagesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagesCell.xib; sourceTree = "<group>"; };
+		3D2362D91E75420D00749E3C /* PictureInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureInfo.h; sourceTree = "<group>"; };
+		3D2362DA1E75420D00749E3C /* PictureInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureInfo.m; sourceTree = "<group>"; };
 		3D71A38F1E72BF7E002C3524 /* NETEASENews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NETEASENews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D71A3931E72BF7E002C3524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3D71A3951E72BF7E002C3524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +155,8 @@
 				3D71A3B81E72CE69002C3524 /* ChannelModel.m */,
 				3D71A3C21E72DF8E002C3524 /* NewsModel.h */,
 				3D71A3C31E72DF8E002C3524 /* NewsModel.m */,
+				3D2362D91E75420D00749E3C /* PictureInfo.h */,
+				3D2362DA1E75420D00749E3C /* PictureInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +171,8 @@
 				3D2362D01E752F1E00749E3C /* NewsTableViewCell.h */,
 				3D2362D11E752F1E00749E3C /* NewsTableViewCell.m */,
 				3D2362D31E752F5D00749E3C /* BaseCell.xib */,
+				3D2362D51E7538D500749E3C /* BigImageCell.xib */,
+				3D2362D71E753D8300749E3C /* ImagesCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,8 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2362D81E753D8300749E3C /* ImagesCell.xib in Resources */,
 				3D71A3A21E72BF7E002C3524 /* LaunchScreen.storyboard in Resources */,
 				3D71A39F1E72BF7E002C3524 /* Assets.xcassets in Resources */,
+				3D2362D61E7538D500749E3C /* BigImageCell.xib in Resources */,
 				3D2362D41E752F5D00749E3C /* BaseCell.xib in Resources */,
 				3D71A3BB1E72CE99002C3524 /* topic_news.json in Resources */,
 				3D71A39D1E72BF7E002C3524 /* Main.storyboard in Resources */,
@@ -317,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2362DB1E75420D00749E3C /* PictureInfo.m in Sources */,
 				3D71A3C11E72DF77002C3524 /* NewsTableViewController.m in Sources */,
 				3D71A3971E72BF7E002C3524 /* AppDelegate.m in Sources */,
 				3D71A3CA1E72E69C002C3524 /* NetworkTool.m in Sources */,

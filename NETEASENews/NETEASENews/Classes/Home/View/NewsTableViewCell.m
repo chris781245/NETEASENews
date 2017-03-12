@@ -8,7 +8,7 @@
 
 #import "NewsTableViewCell.h"
 #import <UIImageView+WebCache.h>
-
+#import "PictureInfo.h"
 @interface NewsTableViewCell ()
 
 // 新闻图片
@@ -22,6 +22,8 @@
 
 // 回复数
 @property (weak, nonatomic) IBOutlet UILabel *lblReplyCount;
+
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *iconImagesView;
 
 @end
 
@@ -46,7 +48,24 @@
     self.lblSource.text = newsModel.source;
     self.lblReplyCount.text = [NSString stringWithFormat:@"%zd", newsModel.replyCount];
     
-    
+    // 遍历多图图片集合
+    for (int i = 0; i < self.iconImagesView.count; i++) {
+        
+        // 获取对应的图片字典
+        NSDictionary *imgDic = newsModel.imgextra[i];
+        
+        // 通过key获取图片地址
+        NSString *imgPath = [imgDic objectForKey:@"imgsrc"];
+        
+        // 根据下标获取对应的模型
+        //PictureInfo *pic = newsModel.imgextra[i];
+        
+        // 获取对应的imageView
+        UIImageView *imageView = self.iconImagesView[i];
+        
+        // 设置图片
+        [imageView sd_setImageWithURL:[NSURL URLWithString:imgPath] placeholderImage:[UIImage imageNamed:@"placeholderImage"]];
+    }
     
 }
 
