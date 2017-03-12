@@ -14,14 +14,13 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="krf-dK-cq7" id="OK9-bI-Dfq">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bcd-wQ-56z">
-                        <rect key="frame" x="10" y="10" width="60" height="59"/>
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="59" id="G7W-ns-ZTY"/>
-                            <constraint firstAttribute="width" constant="60" id="t4Q-bo-ihY"/>
+                            <constraint firstAttribute="width" constant="60" id="SyZ-Zg-B3W"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJV-Cv-OhT">
@@ -44,16 +43,16 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Bcd-wQ-56z" firstAttribute="top" secondItem="OK9-bI-Dfq" secondAttribute="top" constant="10" id="Odb-2r-oNR"/>
-                    <constraint firstItem="DJV-Cv-OhT" firstAttribute="leading" secondItem="Bcd-wQ-56z" secondAttribute="trailing" constant="10" id="PeS-1x-aLZ"/>
-                    <constraint firstAttribute="trailing" secondItem="DJV-Cv-OhT" secondAttribute="trailing" constant="10" id="T3L-8T-SsH"/>
-                    <constraint firstAttribute="bottom" secondItem="U26-Ym-7Z2" secondAttribute="bottom" constant="10" id="WA2-eL-DNx"/>
-                    <constraint firstItem="XyJ-R5-w5Q" firstAttribute="leading" secondItem="Bcd-wQ-56z" secondAttribute="trailing" constant="10" id="YY8-7G-L8s"/>
-                    <constraint firstItem="Bcd-wQ-56z" firstAttribute="leading" secondItem="OK9-bI-Dfq" secondAttribute="leading" constant="10" id="aof-th-lWr"/>
-                    <constraint firstAttribute="bottom" secondItem="XyJ-R5-w5Q" secondAttribute="bottom" constant="10" id="eS8-jJ-ulA"/>
-                    <constraint firstAttribute="trailing" secondItem="U26-Ym-7Z2" secondAttribute="trailing" constant="10" id="gdy-on-9U0"/>
-                    <constraint firstAttribute="bottom" secondItem="Bcd-wQ-56z" secondAttribute="bottom" constant="10" id="tzX-lg-uER"/>
-                    <constraint firstItem="DJV-Cv-OhT" firstAttribute="top" secondItem="OK9-bI-Dfq" secondAttribute="top" constant="10" id="zke-qU-5Lx"/>
+                    <constraint firstAttribute="bottom" secondItem="Bcd-wQ-56z" secondAttribute="bottom" constant="10" id="9Ba-0f-3JX"/>
+                    <constraint firstAttribute="bottom" secondItem="XyJ-R5-w5Q" secondAttribute="bottom" constant="10" id="DYm-ZP-mx2"/>
+                    <constraint firstAttribute="trailing" secondItem="DJV-Cv-OhT" secondAttribute="trailing" constant="10" id="PYS-0N-hJL"/>
+                    <constraint firstItem="DJV-Cv-OhT" firstAttribute="leading" secondItem="Bcd-wQ-56z" secondAttribute="trailing" constant="10" id="Y4R-me-pCX"/>
+                    <constraint firstAttribute="bottom" secondItem="U26-Ym-7Z2" secondAttribute="bottom" constant="10" id="aIl-Iz-Zw9"/>
+                    <constraint firstItem="DJV-Cv-OhT" firstAttribute="top" secondItem="OK9-bI-Dfq" secondAttribute="top" constant="10" id="eSe-ki-CWK"/>
+                    <constraint firstItem="Bcd-wQ-56z" firstAttribute="top" secondItem="OK9-bI-Dfq" secondAttribute="top" constant="10" id="iR1-Nj-6a3"/>
+                    <constraint firstAttribute="trailing" secondItem="U26-Ym-7Z2" secondAttribute="trailing" constant="10" id="qOM-aX-Ppi"/>
+                    <constraint firstItem="Bcd-wQ-56z" firstAttribute="leading" secondItem="OK9-bI-Dfq" secondAttribute="leading" constant="10" id="stA-Rw-AMK"/>
+                    <constraint firstItem="XyJ-R5-w5Q" firstAttribute="leading" secondItem="Bcd-wQ-56z" secondAttribute="trailing" constant="10" id="vaP-eV-tIg"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

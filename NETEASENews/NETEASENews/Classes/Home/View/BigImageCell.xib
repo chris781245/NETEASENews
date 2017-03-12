@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nJy-U7-pow" id="rBB-3c-1Qm">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nx0-OE-Z54">
@@ -25,9 +25,6 @@
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bJe-XW-cRA">
                         <rect key="frame" x="10" y="33" width="355" height="65"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="65" id="Kyb-2h-kX0"/>
-                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuw-Nr-btQ">
                         <rect key="frame" x="10" y="103" width="33" height="16"/>
@@ -43,16 +40,17 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="dzx-PQ-hai" secondAttribute="trailing" constant="10" id="6iC-kE-H1J"/>
-                    <constraint firstItem="uuw-Nr-btQ" firstAttribute="leading" secondItem="rBB-3c-1Qm" secondAttribute="leading" constant="10" id="AXA-OH-pSg"/>
-                    <constraint firstItem="bJe-XW-cRA" firstAttribute="top" secondItem="Nx0-OE-Z54" secondAttribute="bottom" constant="5" id="DsD-qS-DR4"/>
-                    <constraint firstAttribute="trailing" secondItem="Nx0-OE-Z54" secondAttribute="trailing" constant="10" id="EER-2s-sNh"/>
-                    <constraint firstAttribute="trailing" secondItem="bJe-XW-cRA" secondAttribute="trailing" constant="10" id="Gid-xO-Grl"/>
-                    <constraint firstItem="Nx0-OE-Z54" firstAttribute="leading" secondItem="rBB-3c-1Qm" secondAttribute="leading" constant="10" id="UZl-nN-GQt"/>
-                    <constraint firstItem="bJe-XW-cRA" firstAttribute="leading" secondItem="rBB-3c-1Qm" secondAttribute="leading" constant="10" id="dtU-NW-Kig"/>
-                    <constraint firstItem="dzx-PQ-hai" firstAttribute="top" secondItem="bJe-XW-cRA" secondAttribute="bottom" constant="5" id="eUl-dr-AA2"/>
-                    <constraint firstItem="Nx0-OE-Z54" firstAttribute="top" secondItem="rBB-3c-1Qm" secondAttribute="top" constant="10" id="goE-Gz-NxT"/>
-                    <constraint firstItem="uuw-Nr-btQ" firstAttribute="top" secondItem="bJe-XW-cRA" secondAttribute="bottom" constant="5" id="xbB-vA-ZU5"/>
+                    <constraint firstAttribute="bottom" secondItem="uuw-Nr-btQ" secondAttribute="bottom" constant="10" id="2Ub-aj-bZd"/>
+                    <constraint firstAttribute="trailing" secondItem="bJe-XW-cRA" secondAttribute="trailing" constant="10" id="82h-iZ-MuG"/>
+                    <constraint firstItem="Nx0-OE-Z54" firstAttribute="top" secondItem="rBB-3c-1Qm" secondAttribute="top" constant="10" id="8TO-vC-cbl"/>
+                    <constraint firstAttribute="trailing" secondItem="Nx0-OE-Z54" secondAttribute="trailing" constant="10" id="KWh-wb-KMz"/>
+                    <constraint firstItem="dzx-PQ-hai" firstAttribute="top" secondItem="bJe-XW-cRA" secondAttribute="bottom" constant="5" id="OKZ-O6-Pdc"/>
+                    <constraint firstItem="bJe-XW-cRA" firstAttribute="top" secondItem="Nx0-OE-Z54" secondAttribute="bottom" constant="5" id="SiC-r3-AQ5"/>
+                    <constraint firstItem="Nx0-OE-Z54" firstAttribute="leading" secondItem="rBB-3c-1Qm" secondAttribute="leading" constant="10" id="cND-MN-jPj"/>
+                    <constraint firstAttribute="trailing" secondItem="dzx-PQ-hai" secondAttribute="trailing" constant="10" id="dQI-Tr-L2P"/>
+                    <constraint firstItem="bJe-XW-cRA" firstAttribute="leading" secondItem="rBB-3c-1Qm" secondAttribute="leading" constant="10" id="tHq-nT-4fq"/>
+                    <constraint firstAttribute="bottom" secondItem="dzx-PQ-hai" secondAttribute="bottom" constant="10" id="vXa-By-ELI"/>
+                    <constraint firstItem="uuw-Nr-btQ" firstAttribute="leading" secondItem="rBB-3c-1Qm" secondAttribute="leading" constant="10" id="vhG-FD-JbH"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

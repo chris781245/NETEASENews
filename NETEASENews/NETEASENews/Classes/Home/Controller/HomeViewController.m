@@ -158,7 +158,7 @@
 
 }
 
-#pragma mark --
+#pragma mark -- newsView滚动 标签字体缩放，渐变色
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     // 计算小数索引
