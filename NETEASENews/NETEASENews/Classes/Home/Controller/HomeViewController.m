@@ -43,6 +43,9 @@
     // 记录频道数据源
     self.channelModelArray = [ChannelModel getChannelModelArray];
     
+    // 初始化频道数组
+    self.channelLabelArray = [NSMutableArray array];
+    
     // 遍历频道模型数组，创建对应label
         // 设置label宽高
     CGFloat labelWidth = 80;
@@ -81,7 +84,7 @@
         
         // 表示头条新闻
         if (i == 0) {
-            
+            channelLabel.scalePercent = 1;
         }
         
     }
@@ -94,7 +97,7 @@
     self.channelView.showsHorizontalScrollIndicator = NO;
 }
 
-#pragma mark - 点击频道label的手势处理
+#pragma mark - 点击频道获取对应的新闻
 - (void) tapChannelLabelAction: (UITapGestureRecognizer *)gesture {
     
     // 获取频道label
@@ -105,6 +108,16 @@
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:channelLabel.tag inSection:0];
     
     [self.newsView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+    
+    // 遍历频道数组，判断点击的频道和数组里的频道是否匹配， 匹配则放大，否则显示默认状态
+    for (ChannelLabel *label in self.channelLabelArray) {
+        if (channelLabel == label) {
+            label.scalePercent = 1;
+        } else {
+            label.scalePercent = 0;
+        }
+    }
+    
 }
 
 #pragma mark - 滚动标签，让频道居中 uiscrollview delegate
@@ -143,6 +156,43 @@
     // 频道滚动到指定位置
     [self.channelView setContentOffset:CGPointMake(contentOffsetX, 0) animated:YES];
 
+}
+
+#pragma mark --
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    // 计算小数索引
+    CGFloat floatIndex = scrollView.contentOffset.x / scrollView.frame.size.width;
+    
+    // 计算整数索引
+    int index = scrollView.contentOffset.x / scrollView.frame.size.width;
+    
+    // 获取百分比
+    CGFloat percent = floatIndex - index;
+    
+    // 计算左边标签的百分比
+    CGFloat leftPercent = 1 - percent;
+    
+    // 计算右边标签的百分比
+    CGFloat rightPercent = percent;
+    
+    // 计算左边标签索引
+    int leftIndex = index;
+    
+    // 计算右边标签索引
+    int rightIndex = index + 1;
+    
+    // 根据指定索引获取标签
+    ChannelLabel *leftChannelLabel = self.channelLabelArray[leftIndex];
+    
+    // 设置左边标签的缩放百分比
+    leftChannelLabel.scalePercent = leftPercent;
+    
+    // 判断右边频道的标签是否超出可用的取值范围
+    if (rightIndex < self.channelLabelArray.count) {
+        ChannelLabel *rightChannelLabel = self.channelLabelArray[rightIndex];
+        rightChannelLabel.scalePercent = rightPercent;
+    }
 }
 
 // 设置新闻视图

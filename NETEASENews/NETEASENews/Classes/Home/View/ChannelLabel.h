@@ -10,4 +10,7 @@
 
 @interface ChannelLabel : UILabel
 
+// 缩放百分比
+@property (nonatomic, assign) CGFloat scalePercent;
+
 @end
