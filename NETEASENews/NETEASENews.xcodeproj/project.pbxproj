@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2362D21E752F1E00749E3C /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2362D11E752F1E00749E3C /* NewsTableViewCell.m */; };
+		3D2362D41E752F5D00749E3C /* BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2362D31E752F5D00749E3C /* BaseCell.xib */; };
 		3D71A3941E72BF7E002C3524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3931E72BF7E002C3524 /* main.m */; };
 		3D71A3971E72BF7E002C3524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A3961E72BF7E002C3524 /* AppDelegate.m */; };
 		3D71A39D1E72BF7E002C3524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D71A39B1E72BF7E002C3524 /* Main.storyboard */; };
@@ -25,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		246A791E6EA35B339F1A6909 /* Pods-NETEASENews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NETEASENews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NETEASENews/Pods-NETEASENews.debug.xcconfig"; sourceTree = "<group>"; };
+		3D2362D01E752F1E00749E3C /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		3D2362D11E752F1E00749E3C /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		3D2362D31E752F5D00749E3C /* BaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseCell.xib; sourceTree = "<group>"; };
 		3D71A38F1E72BF7E002C3524 /* NETEASENews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NETEASENews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D71A3931E72BF7E002C3524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3D71A3951E72BF7E002C3524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -154,6 +159,9 @@
 				3D71A3BD1E72D3EE002C3524 /* ChannelLabel.m */,
 				3D71A3C51E72DFBE002C3524 /* NewsCell.h */,
 				3D71A3C61E72DFBE002C3524 /* NewsCell.m */,
+				3D2362D01E752F1E00749E3C /* NewsTableViewCell.h */,
+				3D2362D11E752F1E00749E3C /* NewsTableViewCell.m */,
+				3D2362D31E752F5D00749E3C /* BaseCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,6 +256,7 @@
 			files = (
 				3D71A3A21E72BF7E002C3524 /* LaunchScreen.storyboard in Resources */,
 				3D71A39F1E72BF7E002C3524 /* Assets.xcassets in Resources */,
+				3D2362D41E752F5D00749E3C /* BaseCell.xib in Resources */,
 				3D71A3BB1E72CE99002C3524 /* topic_news.json in Resources */,
 				3D71A39D1E72BF7E002C3524 /* Main.storyboard in Resources */,
 			);
@@ -314,6 +323,7 @@
 				3D71A3C71E72DFBE002C3524 /* NewsCell.m in Sources */,
 				3D71A3941E72BF7E002C3524 /* main.m in Sources */,
 				3D71A3B61E72C53D002C3524 /* HomeViewController.m in Sources */,
+				3D2362D21E752F1E00749E3C /* NewsTableViewCell.m in Sources */,
 				3D71A3B91E72CE69002C3524 /* ChannelModel.m in Sources */,
 				3D71A3BE1E72D3EE002C3524 /* ChannelLabel.m in Sources */,
 				3D71A3C41E72DF8E002C3524 /* NewsModel.m in Sources */,

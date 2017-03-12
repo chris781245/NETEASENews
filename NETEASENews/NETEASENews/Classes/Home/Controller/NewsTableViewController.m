@@ -9,6 +9,7 @@
 #import "NewsTableViewController.h"
 #import "NewsCell.h"
 #import "NewsModel.h"
+#import "NewsTableViewCell.h"
 
 @interface NewsTableViewController ()
 
@@ -27,8 +28,9 @@
 
 - (void) setupTableView {
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+   // [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
+    [self.tableView registerNib:[UINib nibWithNibName:@"BaseCell" bundle:nil] forCellReuseIdentifier:@"baseCell"];
 }
 
 - (void)setUrlStr:(NSString *)urlStr {
@@ -56,13 +58,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"baseCell" forIndexPath:indexPath];
     
     NewsModel *model = self.newsModelArray[indexPath.row];
     
-    cell.textLabel.text = model.title;
+    cell.newsModel = model;
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 80;
 }
 
 
